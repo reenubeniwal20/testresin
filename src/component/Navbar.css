@@ -1,0 +1,97 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+.bg-body-tertiary{
+    background-color: #eee !important;
+}
+.navbar-brand{
+    color: red;
+    font-family: 'Kalam', cursive;
+    font-size: 25px;
+}
+.nav-item {
+    padding-left: 35px;
+}
+.collapse{
+    margin-left: 21%;
+}
+#cart{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.signoutparent{
+    margin-left: 40px;
+}
+#signout{
+    width: 25px;
+   
+}
+#cartresponsive{
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+.cartitemcount{
+    position: absolute;
+    right: 84px;
+    top: 15px;
+    border-style: solid;
+    margin: 0px;
+    border-radius: 100%;
+      background-color: red;
+      color: red;
+}
+.cartitemcount #cartlengthnumber{
+    margin: 0px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    font-size: 11px;
+    color: white;
+}
+.cartitemcountresponive{
+    position: absolute;
+    right: 79px;
+    top: 15px;
+    border-style: solid;
+    margin: 0px;
+    border-radius: 100%;
+      background-color: red;
+      color: rgb(255, 0, 0);
+}
+.cartitemcountresponive #cartlengthresponsive{
+    margin: 0px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+}
+@media (max-width:400px){
+    .navbar-brand{
+        
+        font-size: 20px;
+    }
+}
+@media (max-width:1000px) {
+    .nav-item {
+        padding-left: 0px;
+    }
+    .collapse{
+        margin-left: 0%;
+    }
+    #cart{
+        display: none;
+    }
+    .cartitemcount{
+        display: none;
+    }
+
+}
+@media (min-width:1001px){
+    #cartresponsive{
+        display: none;
+    }
+    .cartitemcountresponive{
+        display: none;
+    }
+}

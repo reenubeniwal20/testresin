@@ -1,0 +1,536 @@
+.mainContainer{
+    background-color: #eee;
+    padding-bottom: 50px;
+}
+.mainContainer .childContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.mainContainer .childContainer .animation {
+    width: 100%;
+    height: 100%;
+
+}
+
+.mainContainer .childContainer .animation img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.mainContainer .shopBy p {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.mainContainer .shopBy p span {
+    color: red;
+}
+
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.category .frame {
+    position: relative;
+    text-align: center;
+    width: 25%;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(211, 211, 211);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.category .frame #frameImg {
+    width: 100%;
+
+}
+
+.category .frame #frameId {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.category .frame #frameIdOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.category .frame:hover #frameImg:hover ~ #frameIdOver {
+    opacity: 1;
+  }
+  
+
+
+.category .frame #frameImg:hover {
+    opacity: 0.2;
+}
+
+.category .frame #frameIdOver:hover {
+    background-color: rgb(24, 22, 22);
+    color: rgb(183, 194, 203);
+}
+.category .frame:hover{
+    transform: scale(1.1);
+}
+
+.category .coster {
+    position: relative;
+    text-align: center;
+    width: 25%;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(211, 211, 211);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.category .coster #costerImg {
+    width: 100%;
+
+}
+
+.category .coster #costerId {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.category .coster #costerIdOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.category .coster:hover #costerImg:hover ~ #costerIdOver {
+    opacity: 1;
+  }
+
+.category .coster #costerImg:hover {
+    opacity: 0.2;
+}
+
+.category .coster #costerIdOver:hover {
+    background-color: rgb(24, 22, 22);
+    color: rgb(183, 194, 203);
+}
+.category .coster:hover{
+    transform: scale(1.1);
+}
+
+.category .nameplate {
+    position: relative;
+    text-align: center;
+    width: 25%;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(211, 211, 211);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.category .nameplate #nameplateImg {
+    width: 100%;
+
+}
+
+.category .nameplate #nameplateId {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.category .nameplate #nameplateIdOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.category .nameplate:hover #nameplateImg:hover ~ #nameplateIdOver {
+    opacity: 1;
+  }
+
+.category .nameplate #nameplateImg:hover {
+    opacity: 0.2;
+}
+
+.category .nameplate #nameplateIdOver:hover {
+    background-color: rgb(24, 22, 22);
+    color: rgb(183, 194, 203);
+}
+.category .nameplate:hover{
+    transform: scale(1.1);
+}
+
+.category .lamp {
+    position: relative;
+    text-align: center;
+    width: 25%;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(211, 211, 211);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.category .lamp #lampImg {
+    width: 100%;
+
+}
+
+.category .lamp #lampId {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.category .lamp #lampIdOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.category .nameplate:hover #nameplateImg:hover ~ #nameplateIdOver {
+    opacity: 1;
+  }
+
+.category .lamp #lampImg:hover {
+    opacity: 0.2;
+}
+
+.category .lamp #lampIdOver:hover {
+    background-color: rgb(24, 22, 22);
+    color: rgb(183, 194, 203);
+}
+.category .lamp:hover{
+    transform: scale(1.1);
+}
+
+.category .keyring {
+    position: relative;
+    text-align: center;
+    width: 25%;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(211, 211, 211);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.category .keyring #keyringImg {
+    width: 100%;
+
+}
+
+.category .keyring #keyringId {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.category .keyring #keyringIdOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.category .keyring:hover #keyringImg:hover ~ #keyringIdOver {
+    opacity: 1;
+  }
+
+.category .keyring #keyringImg:hover {
+    opacity: 0.2;
+}
+
+.category .keyring #keyringIdOver:hover {
+    background-color: rgb(24, 22, 22);
+    color: rgb(183, 194, 203);
+}
+.category .keyring:hover{
+    transform: scale(1.1);
+}
+
+.category .jewellery {
+    position: relative;
+    text-align: center;
+    width: 25%;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(211, 211, 211);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.category .jewellery #jewelleryImg {
+    width: 100%;
+
+}
+
+.category .jewellery #jewelleryId {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.category .jewellery #jewelleryIdOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.category .jewellery:hover #jewelleryImg:hover ~ #jewelleryIdOver {
+    opacity: 1;
+  }
+
+.category .jewellery #jewelleryImg:hover {
+    opacity: 0.2;
+}
+
+.category .jewellery #jewelleryIdOver:hover {
+    background-color: rgb(24, 22, 22);
+    color: rgb(183, 194, 203);
+}
+.category .jewellery:hover{
+    transform: scale(1.1);
+}
+.category .table {
+    position: relative;
+    text-align: center;
+    width: 25%;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(211, 211, 211);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.category .table #tableImg {
+    width: 100%;
+}
+
+.category .table #tableId {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.category .table #tableIdOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.category .table:hover #tableImg:hover ~ #tableIdOver {
+    opacity: 1;
+  }
+
+.category .table #tableImg:hover {
+    opacity: 0.2;
+}
+
+.category .table #tableIdOver:hover {
+    background-color: rgb(24, 22, 22);
+    color: rgb(183, 194, 203);
+}
+.category .table:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width:480px) {
+    .category .frame {
+        width: 45%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .category .coster {
+        width: 45%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .category .nameplate {
+        width: 45%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .category .lamp {
+        width: 45%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .category .keyring {
+        width: 45%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .category .jewellery {
+        width: 45%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .category .table {
+        width: 45%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width:267px) {
+    .category .frame {
+        width: 100%;
+    }
+
+    .category .coster {
+        width: 100%;
+    }
+
+    .category .nameplate {
+        width: 100%;
+    }
+
+    .category .lamp {
+        width: 100%;
+    }
+
+    .category .keyring {
+        width: 100%;
+    }
+
+    .category .jewellery {
+        width: 100%;
+    }
+    .category .table {
+        width: 45%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}

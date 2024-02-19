@@ -1,0 +1,73 @@
+.parentCategory{
+    background-color: #eee;
+    
+}
+.parentCategory h1{
+    padding-top: 10px;
+    text-align: center;
+}
+.parentCategory h4{
+    padding-top: 200px;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.frameCategory {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.frameCategory .childFrame {
+    position: relative;
+    text-align: center;
+    width: 25%;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(211, 211, 211);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.frameCategory .childFrame #childFrameImg {
+    width: 100%;
+
+}
+
+.frameCategory .childFrame #childFrameId {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.frameCategory .childFrame #price{
+    font-size: 23px;
+    font-weight: 650;
+}
+.frameCategory .childFrame #priceCut,del{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.frameCategory .childFrame:hover{
+    transform: scale(1.05);
+}
+
+@media (max-width:480px) {
+    .frameCategory .childFrame {
+        width: 45%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width:267px) {
+    .frameCategory .childFrame {
+        width: 100%;
+    }
+}
