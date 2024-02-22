@@ -17,10 +17,10 @@ app.use(cors({
 
 // Create a connection pool to the MySQL database
 const pool = mysql.createPool({
-  host: '127.0.0.1',
-  user: 'root',
-  password: '',
-  database: 'resin'
+  host: '127.0.0.1:3306',
+  user: 'u580800757_resin',
+  password: 'Kesar@800',
+  database: 'u580800757_resin'
 });
 
 // Authenticate User
