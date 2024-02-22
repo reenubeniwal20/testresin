@@ -11,7 +11,7 @@ let loggedInUsername = ''; // Define a variable to store the logged-in username
 app.use(express.json());
 app.use(cors({
   
-  origin: 'http://localhost:3000', // Allow requests from this origin
+  origin: 'https://resin-compressed.vercel.app', // Allow requests from this origin
   credentials: true // Allow credentials (e.g., session cookies)
 }));
 
