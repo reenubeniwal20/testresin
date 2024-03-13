@@ -579,6 +579,7 @@ function Productkeyring(props) {
         });
         setDataCart(response.data);
         window.location.reload();
+        console.log(dataCart);
     }
      
     const sendDataBuy = async()=>{
@@ -588,6 +589,7 @@ function Productkeyring(props) {
     });
     setDataBuy(response.data);
 redirect();
+console.log(dataBuy);
 
 }
 const redirect=()=>{

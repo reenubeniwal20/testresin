@@ -166,6 +166,7 @@ function Productcarhanging() {
         });
         setDataCart(response.data);
         window.location.reload();
+        console.log(dataCart);
     }
 const sendDataBuy = async()=>{
 
@@ -175,6 +176,7 @@ const sendDataBuy = async()=>{
     });
     setDataBuy(response.data);
     redirect();
+    console.log(dataBuy);
 
 }
 const redirect=()=>{
