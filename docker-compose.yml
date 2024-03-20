@@ -1,0 +1,36 @@
+version: "3.3"
+networks:
+  my-custom-network:
+services:
+  app:
+    container_name: docker-react-c
+    image: docker-react-i
+    build:
+      context: .
+    ports:
+      - 8082:80
+    networks:
+      - my-custom-network
+  backend:
+    build: ./backend
+    ports:
+     - "5001:5001"
+    depends_on:
+     -  mysql_db
+    networks:
+      - my-custom-network
+  mysql_db:
+   image: mysql:8.0
+   environment:
+      MYSQL_HOST: mysql_db
+      MYSQL_PORT: 3306
+      MYSQL_USER: reenu
+      MYSQL_PASSWORD: Reenu@123
+      MYSQL_DATABASE: resin
+      MYSQL_ROOT_PASSWORD: Reenu@123321
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_RANDOM_ROOT_PASSWORD: "yes"
+volumes:
+  mysql_data:
+
+

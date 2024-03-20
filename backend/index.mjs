@@ -11,16 +11,17 @@ let loggedInUsername = ''; // Define a variable to store the logged-in username
 app.use(express.json());
 app.use(cors({
   
-  origin: 'http://localhost:3000', // Allow requests from this origin
+  origin:"*", // Allow requests from this origin
   credentials: true // Allow credentials (e.g., session cookies)
 }));
 
 // Create a connection pool to the MySQL database
 const pool = mysql.createPool({
-  host: '127.0.0.1',
-  user: 'root',
-  password: '',
-  database: 'resin'
+  host: "MYSQL_HOST",
+  port: "MYSQL_PORT",
+  user: "MYSQL_USER",
+  password: "MYSQL_PASSWORD",
+  database: "MYSQL_DATABASE"
 });
 
 // Authenticate User
@@ -89,7 +90,9 @@ app.post('/signup', (req, res) => {
 
       // Once user is successfully inserted, you can proceed with creating the cart and buy tables if needed
       // SQL query to create cart table for the user
-      const cartSql = `CREATE TABLE resin.cart${username} (Cart VARCHAR(50), Heading VARCHAR(50))`;
+      
+
+app.post('/setDataBuy', (req, res) => {const cartSql = `CREATE TABLE resin.cart${username} (Cart VARCHAR(50), Heading VARCHAR(50))`;
       pool.query(cartSql, (cartErr, cartResult) => {
         if (cartErr) {
           console.error('Error creating cart table:', cartErr);
@@ -138,8 +141,6 @@ app.post('/setDataCart', (req, res) => {
   });
 });
 
-
-app.post('/setDataBuy', (req, res) => {
   const { currentPrice, currentHeading } = req.body; // Include currentHeading in request body
 
   // Verify if loggedInUsername is set

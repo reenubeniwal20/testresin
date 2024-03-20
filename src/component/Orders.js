@@ -42,6 +42,7 @@ export default function Orders() {
             setConfirmData(response.data); 
             alert("Your order has been confirmed. We will get in touch with you for order customization.")  
             window.location.reload();
+            console.log(confirmData);
         
  
         } catch (error) {

@@ -49,7 +49,7 @@ const Cart = () => {
             setConfirmData(response.data); 
             
             redirect();
- 
+            console.log(confirmData); 
         } catch (error) {
             console.error('Error sending order data:', error);
         }
